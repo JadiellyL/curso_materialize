@@ -12,3 +12,7 @@ const instancesDropdown = M.Dropdown.init(elementsDropdown,{
 });
 const elemtsSidenav = document.querySelectorAll(".sidenav");
 const instancesSidenav = M.Sidenav.init(elemtsSidenav);
+
+//modal
+const elementsModal = document.querySelectorAll(".modal");
+const instancesModal = M.Modal.init(elementsModal);
