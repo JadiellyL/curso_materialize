@@ -10,5 +10,5 @@ const elementsDropdown = document.querySelectorAll(".dropdown-trigger");
 const instancesDropdown = M.Dropdown.init(elementsDropdown,{
     coverTrigger: false
 });
-elemtsSidenav = document.querySelectorAll(".sidenav");
+const elemtsSidenav = document.querySelectorAll(".sidenav");
 const instancesSidenav = M.Sidenav.init(elemtsSidenav);
