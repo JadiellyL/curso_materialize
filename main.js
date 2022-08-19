@@ -1,3 +1,5 @@
+//const M = require("materialize-css");
+
 //floating action button
 const elementsBtns = document.querySelectorAll(".fixed-action-btn");
 const floatingBtn = M.FloatingActionButton.init(elementsBtns,{
@@ -22,4 +24,18 @@ const elementsTooltip = document.querySelectorAll(".tooltipped");
 const instancesTooltip = M.Tooltip.init(elementsTooltip, {
     html: "olha essa dica",
     position: "right"
+});
+
+//Toast
+const elementsToast = document.querySelector("#toast");
+const instanceToast = ()=>{
+    M.toast({
+        html: "Tambem sou uma notificação",
+        classes: "rounded"
+    })
+}
+
+
+elementsToast.addEventListener("click", ()=>{
+    instanceToast();
 });
